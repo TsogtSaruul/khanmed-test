@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API = axios.create({ baseURL: 'https://khanmed-clinic-server.vercel.app' });
+const API = axios.create({ baseURL: 'https://khanmed-test-server.vercel.app' });
 
 API.interceptors.request.use((req) => {
     if (localStorage.getItem('auth')) {
